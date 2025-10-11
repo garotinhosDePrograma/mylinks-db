@@ -1,20 +1,20 @@
-create database if not exists MyLinks;
+CREATE DATABASE IF NOT EXISTS MyLinks;
 
-use MyLinks;
+USE MyLinks;
 
-create table if not exists usuarios (
-	id int auto_increment primary key,
-    username varchar(255) unique,
-    email varchar(255) unique,
-    senha varchar(255) not null,
-    foto_perfil varchar(255)
+CREATE TABLE IF NOT EXISTS usuarios (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE,
+    email VARCHAR(255) UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    foto_perfil VARCHAR(255)
 );
 
-create table if not exists links (
-	id int auto_increment primary key,
-    usuario_id int,
-    titulo varchar(100),
-    url varchar(150),
-    ordem int,
-    foreign key (usuario_id) references usuarios(id) on delete cascade
+CREATE TABLE IF NOT EXISTS links (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    titulo VARCHAR(100),
+    url VARCHAR(150),
+    ordem INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
