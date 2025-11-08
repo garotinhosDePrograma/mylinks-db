@@ -36,7 +36,7 @@ MyLinks (Database)
 
 ```
 ┌─────────────────┐         ┌─────────────────┐
-│   usuarios      │         │     links       │
+│   usuarios         │         │     links       │
 ├─────────────────┤         ├─────────────────┤
 │ id (PK)         │─────┬───│ id (PK)         │
 │ username (UQ)   │     │   │ usuario_id (FK) │
