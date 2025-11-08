@@ -39,10 +39,10 @@ MyLinks (Database)
 │   usuarios         │         │     links       │
 ├─────────────────┤         ├─────────────────┤
 │ id (PK)         │─────┬───  │ id (PK)         │
-│ username (UQ)   │     │       │ usuario_id (FK) │
-│ email (UQ)      │     └──→   │ titulo          │
-│ senha           │             │ url             │
-│ foto_perfil     │             │ ordem           │
+│ username (UQ)   │     │      │ usuario_id (FK) │
+│ email (UQ)      │     └──→  │ titulo          │
+│ senha           │            │ url             │
+│ foto_perfil     │            │ ordem           │
 └─────────────────┘         └─────────────────┘
      1                                 N
 ```
