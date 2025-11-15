@@ -25,19 +25,15 @@ MyLinks (Database)
 
 ---
 
-## 🔗 Relacionamentos
+## 📊 Diagrama Entidade-Relacionamento
 
-- **1:N** entre `usuarios` e `links`
-- **ON DELETE CASCADE**: Ao deletar um usuário, todos os seus links são removidos automaticamente
+![Diagrama ER](diagrama-er.png)
 
 ---
 
-## 📊 Diagrama Entidade-Relacionamento
-
-```
-![Diagrama ER](diagrama-er.jpg)
-
-```
+### Relacionamentos
+- **1:N** entre `usuarios` e `links`
+- **ON DELETE CASCADE**: Ao deletar usuário, links são removidos automaticamente
 
 ---
 
