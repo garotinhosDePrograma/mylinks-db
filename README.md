@@ -27,7 +27,7 @@ MyLinks (Database)
 
 ## 📊 Diagrama Entidade-Relacionamento
 
-![Diagrama ER](diagrama-er.png)
+![Diagrama ER](diagrama-er.jpg)
 
 ---
 
