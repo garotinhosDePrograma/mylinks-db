@@ -18,3 +18,11 @@ CREATE TABLE IF NOT EXISTS links (
     ordem INT,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
+
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Harry Potter', 'harry@hogwarts.com', 'harry123', '');
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Peter Parker', 'miranha@gmail.com', 'peter123', '');
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Tony Stark', 'ironman@hotmail.com', 'tony123', '');
+
+INSERT INTO links (usuario_id, titulo, url, ordem) VALUES (1, 'Harry Potter', 'https://m.youtube.com/watch?v=jAxvLkfeCpI&pp=0gcJCR4Bo7VqN5tD', 1);
+INSERT INTO links (usuario_id, titulo, url, ordem) VALUES (2, 'Miranha', 'https://www.reddit.com/r/Spiderman/comments/t0emam/which_episode_of_spiderman_1960_is_this_meme_from/?tl=pt-br', 1);
+INSERT INTO links (usuario_id, titulo, url, ordem) VALUES (3, 'Homen de Ferro', 'https://www.reddit.com/r/memes/comments/ikjsrg/i_am_iron_man/?tl=pt-br', 1);
