@@ -15,9 +15,9 @@ CREATE TABLE IF NOT EXISTS links (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
 
-INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Harry_Potter', 'harry@hogwarts.com', '$2b$12$kAj9cVOnEEkq/NiYLLEuaOV3HiLbvJjmvtl12.TgDClIS.hA8tP.y', '');
-INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Peter_Parker', 'miranha@gmail.com', '$2b$12$edPeHGSGR7d33sc6oEGbMuhLYAfw62KYsFZXn7zBX0C8JC82VCElq', '');
-INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Tony_Stark', 'ironman@hotmail.com', '$2b$12$MMWQ4uhz6onAMGPAvufts.98OvsWOTovVlxPb63ljbI4VUgAJktti', '');
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Harry_Potter', 'harry@gmail.com', '$2b$12$kAj9cVOnEEkq/NiYLLEuaOV3HiLbvJjmvtl12.TgDClIS.hA8tP.y', '');
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Peter_Parker', 'peter@gmail.com', '$2b$12$edPeHGSGR7d33sc6oEGbMuhLYAfw62KYsFZXn7zBX0C8JC82VCElq', '');
+INSERT INTO usuarios (username, email, senha, foto_perfil) VALUES ('Tony_Stark', 'tony@hotmail.com', '$2b$12$0o/amXHJFnopEkE1oLCqaOO/PtmTRx6X0eTeWBDQllXe5rgs63bFC', '');
 
 INSERT INTO links (usuario_id, titulo, url, ordem) VALUES (1, 'Harry Potter', 'https://m.youtube.com/watch?v=jAxvLkfeCpI&pp=0gcJCR4Bo7VqN5tD', 1);
 INSERT INTO links (usuario_id, titulo, url, ordem) VALUES (2, 'Miranha', 'https://www.reddit.com/r/Spiderman/comments/t0emam/which_episode_of_spiderman_1960_is_this_meme_from/?tl=pt-br', 1);
